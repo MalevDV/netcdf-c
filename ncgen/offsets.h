@@ -22,16 +22,14 @@ typedef struct Alignment {
 #define USHORTINDEX    4
 #define INTINDEX       5
 #define UINTINDEX      6
-#define LONGINDEX      7
-#define ULONGINDEX     8
-#define LONGLONGINDEX  9
-#define ULONGLONGINDEX 10
-#define FLOATINDEX     11
-#define DOUBLEINDEX    12
-#define PTRINDEX       13
-#define NCVLENINDEX    14
+#define LONGLONGINDEX  7
+#define ULONGLONGINDEX 8
+#define FLOATINDEX     9
+#define DOUBLEINDEX    10
+#define PTRINDEX       11
+#define NCVLENINDEX    12
 
-#define NCTYPES        15
+#define NCTYPES        13
 
 /* Capture in struct and in a vector*/
 typedef struct Typealignset {
@@ -41,8 +39,6 @@ typedef struct Typealignset {
     Alignment ushortalign;	/* unsigned short*/
     Alignment intalign;		/* int*/
     Alignment uintalign;	/* unsigned int*/
-    Alignment longalign;	/* long*/
-    Alignment ulongalign;	/* unsigned long*/
     Alignment longlongalign;	/* long long*/
     Alignment ulonglongalign;	/* unsigned long long*/
     Alignment floatalign;	/* float*/

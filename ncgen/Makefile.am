@@ -37,6 +37,11 @@ endif # USE_NETCDF4
 CLEANFILES = c0.nc c0_64.nc c0_4.nc c0_4c.nc ref_camrun.c \
 		ncf199.nc c5.nc
 
+# These rules are used if someone wants to run offsets.c as
+# a program. Otherwise never invoked, but records how to do it.
+offsets::
+	${CC} -DOFFSETTEST offsets.c -o offsets.exe
+
 # These rules are used if someone wants to rebuild ncgenl.c or ncgeny.c
 # Otherwise never invoked, but records how to do it.
 # BTW: note that renaming is essential because otherwise
